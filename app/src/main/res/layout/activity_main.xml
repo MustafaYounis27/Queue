@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/inputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/system"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choose the system"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D/D/1"
+                    android:onClick="DD1"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M/M/1"
+                    android:onClick="MM1"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M/M/1/k"
+                    android:onClick="MMK"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/D_D_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/λ1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="λ"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                    <EditText
+                        android:id="@+id/μ1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="μ"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                    <EditText
+                        android:id="@+id/K1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="K"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                    <EditText
+                        android:id="@+id/M1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="M"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="result"
+                    android:layout_margin="10dp"
+                    android:onClick="resultDD1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/M_M_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/λ2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="λ"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                    <EditText
+                        android:id="@+id/μ2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="μ"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="result"
+                    android:layout_margin="10dp"
+                    android:onClick="resultMM1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/M_M_K"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/λ3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="λ"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                    <EditText
+                        android:id="@+id/μ3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="μ"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                    <EditText
+                        android:id="@+id/K3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="K"
+                        android:layout_margin="10dp"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="result"
+                    android:layout_margin="10dp"
+                    android:onClick="resultMMK"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/result_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="okay"
+                android:layout_margin="10dp"
+                android:onClick="finish"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
