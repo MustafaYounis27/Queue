@@ -11,10 +11,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 {
-
     LinearLayout DD1Lin, MM1Lin, MMKLin, inputsLin, resultLin;
     EditText λField1, μField1, KField1, MField1, λField2, μField2, λField3, μField3, KField3;
     TextView resultField, systemField;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
